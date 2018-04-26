@@ -1,0 +1,30 @@
+{
+  "name": "agredator",
+  "author": "Anton Repin <ar@xdire.io>",
+  "version": "0.1.0",
+  "licence": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "ts-exceptions": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/node-common/agredator.git"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "install": "npm run build",
+    "test": "tsc && mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.*",
+    "@types/node": "^8.5.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "ts-node": "^4.0.2",
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.44"
+  }
+}
